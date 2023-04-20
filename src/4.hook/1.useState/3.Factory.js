@@ -8,7 +8,7 @@ export default function Factory() {
 
     return (
         <>
-            <button onClick={() => setCarCnt(CarCnt + 1)}>car</button>
+            <button onClick={() => setCarCnt(carCnt + 1)}>car</button>
             <button onClick={() => setShipCnt(shipCnt + 1)}>ship</button>
             <hr/>
             <Car cnt={carCnt}/>
@@ -24,5 +24,5 @@ function Car({cnt}) {
 
 const Ship = React.memo(function({cnt}) {
     console.log('ship')
-    return `ship: ${cnt}`
+    return `ship: ${(cnt)}`
 })
